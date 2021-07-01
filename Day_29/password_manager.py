@@ -37,7 +37,7 @@ def search():
             messagebox.showinfo(title=f"{website}", message=f"Email: {email} \nPassword: {password}")
         else:
             messagebox.showinfo(title="Error", message=f"You have not saved passwords from the {website}."
-                                                       f"\nFill out the form and click the add button.")
+                                                       f"\nFill out the form and click the 'add' button.")
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def write_data_to_json(new_data):
@@ -68,7 +68,6 @@ def save():
                 write_data_to_json(new_data)
             else:
                 data.update(new_data)
-
                 write_data_to_json(data)
             finally:
                 website_input.delete(0, END)
