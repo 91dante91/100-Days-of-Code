@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-CLIENT_SPOTIFY_ID = "f549c93ece5a4de3917105670df40a1d"
-CLIENT_SPOTIFY_SECRET = "108c1790fd4e44589cdafd3b5feeb25d"
+CLIENT_SPOTIFY_ID = "example"
+CLIENT_SPOTIFY_SECRET = "example"
 
 date = input("Which year do you want to travel to? Type the date in this format YYYY-MM-DD: ")
 response = requests.get("https://www.billboard.com/charts/hot-100/" + date)
