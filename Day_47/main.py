@@ -21,8 +21,6 @@ title_span = soup.find(id="productTitle").getText()
 price = float(price_span.getText().split("$")[1])
 title = " ".join(title_span.split())
 
-
-
 if price < 400:
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
