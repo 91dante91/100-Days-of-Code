@@ -24,8 +24,6 @@ def contact():
                    message=request.form['message'])
         return render_template("contact.html", msg_sent=True)
     return render_template("contact.html", msg_sent=False)
-
-
 def send_email(name, email, phone, message):
     email_massage = f"Subject:New Message from Blog\n\nName: {name}\nEmail: {email}\nPhone: {phone}\nMessage: {message}"
     with smtplib.SMTP("smtp.gmail.com") as connection:
